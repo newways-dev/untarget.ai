@@ -9,112 +9,196 @@
   align-items: center;
   justify-content: center;
 
-  .close {
-    cursor: pointer;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-
-    svg {
-      width: 40px;
-      height: 40px;
-
-      path {
-        fill: #fff;
-      }
-    }
-  }
-
-  form {
+  .wrapper {
+    border-radius: 5px;
     background: #fff;
-    padding-top: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 40px;
+    max-width: 500px;
+    width: 100%;
+    padding: 0px 40px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    .title {
-      text-align: center;
-      font-size: 48px;
-      line-height: 0.8em;
-      margin-bottom: 50px;
-    }
-
-    input {
-      margin-bottom: 12px;
+    @media screen and (max-width: 720px) {
+      height: 100vh;
+      max-width: 100%;
       width: 100%;
-      background: none;
-      border: 0;
-      outline: 0;
-      border-bottom: 1px solid var(--color-black);
-
-      height: 50px;
-      font-size: 18px;
-
-      &:hover,
-      &:active {
-        border-width: 2px;
-      }
     }
 
-    .promocode {
-      width: 50%;
-      align-self: flex-end;
+    .close {
+      cursor: pointer;
+      position: absolute;
+      top: 50px;
+      right: 50px;
 
-      direction: rtl;
-      margin-bottom: 20px;
-    }
-
-    .terms {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      max-width: 270px;
-      margin-bottom: 12px;
-
-      .checkbox {
-        width: 20px;
-        height: 20px;
+      @media screen and (max-width: 720px) {
+        top: 20px;
+        right: 20px;
       }
 
-      p {
-        color: #525252;
-        font-size: 14px;
-        span {
-          text-decoration: underline;
+      svg {
+        width: 40px;
+        height: 40px;
+
+        path {
+          fill: #fff;
+
+          @media screen and (max-width: 720px) {
+            fill: #333;
+          }
         }
       }
     }
 
-    button {
-      margin-top: 12px;
-      border-radius: 100px;
-      border: 1px solid var(--color-black);
-      cursor: pointer;
-      padding: 14px 42px;
-      background: var(--background-black);
-      font-size: 16px;
-      transition: all ease 0.3s;
-      font-weight: 500;
-      color: #fff;
+    form {
+      padding-top: 30px;
+      padding-bottom: 40px;
 
-      &:hover {
-        background: #fff;
-        color: var(--color-black);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      justify-content: space-around;
+      .title {
+        text-align: center;
+        font-size: 48px;
+        line-height: 0.8em;
+
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 720px) {
+          font-size: 32px;
+        }
       }
-    }
 
-    .signIn {
-      font-size: 16px;
-      margin-top: 16px;
-      a {
-        margin-left: 6px;
-        font-weight: 700;
+      input {
+        margin-bottom: 4px;
+        width: 100%;
+        background: none;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid var(--color-black);
+
+        height: 50px;
+        font-size: 18px;
+
+        &:hover,
+        &:active {
+          border-width: 2px;
+        }
+      }
+
+      .promocode {
+        width: 50%;
+        align-self: flex-end;
+
+        direction: rtl;
+        margin-bottom: 20px;
+      }
+
+      .terms {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        max-width: 275px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+
+        .checkboxContainer {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          input:checked ~ .checkmark {
+            background-color: #fff;
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+
+            border: 1px solid black;
+          }
+
+          .unchecked {
+            border: 1px solid red;
+          }
+
+          .checkmark:after {
+            content: '';
+            position: absolute;
+            display: none;
+          }
+
+          input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          .checkmark:after {
+            left: 7px;
+            top: 4px;
+            width: 3px;
+            height: 7px;
+            border: solid gray;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+
+        p {
+          color: #525252;
+          font-size: 12px;
+          span {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      button {
+        margin-top: 12px;
+        border-radius: 100px;
+        border: 1px solid var(--color-black);
+        cursor: pointer;
+        padding: 14px 42px;
+        background: var(--background-black);
+        font-size: 16px;
+        transition: all ease 0.3s;
+        font-weight: 500;
+        color: #fff;
+
+        &:hover {
+          background: #fff;
+          color: var(--color-black);
+        }
+      }
+
+      .signIn {
+        font-size: 16px;
+        margin-top: 16px;
+        a {
+          margin-left: 6px;
+          font-weight: 700;
+        }
       }
     }
   }
