@@ -7,6 +7,7 @@ import { selectMenu } from '../../redux/mobileMenu/selector'
 import mobileMenu from '../../assets/icons/mobileMenu.svg'
 import { setOpen } from '../../redux/mobileMenu/slice'
 import { MobileMenu } from '../../components'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   const { openMenu } = useSelector(selectMenu)
@@ -26,10 +27,12 @@ export const Header = () => {
           <li>Цены</li>
           <li>Контакты</li>
           <li>Статистика</li>
-          <li>
-            <ReactSVG className={styles.login} src={login} />
-            Вход
-          </li>
+          <Link to='/sign-up'>
+            <li>
+              <ReactSVG className={styles.login} src={login} />
+              Вход
+            </li>
+          </Link>
         </ul>
         <ReactSVG
           onClick={() => dispatch(setOpen(true))}
