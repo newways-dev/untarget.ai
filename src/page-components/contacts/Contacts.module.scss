@@ -1,0 +1,94 @@
+.contacts {
+  background: var(--background-black);
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #fff;
+
+  .title {
+    line-height: 1.34em;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+
+  .wrapper {
+    max-width: 420px;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+
+      .fbShare {
+        border: 1px solid #2d4565;
+        border-radius: 3px;
+        cursor: pointer;
+        display: inline-block;
+        min-width: 24px;
+        font-size: 10px;
+
+        div {
+          background: url('../../assets/images/fb-share.png') repeat-x;
+          border-color: #9aabc6 #6f83ad #6176a3;
+          border-radius: 2px;
+          border-style: solid;
+          border-width: 1px;
+          height: 20px;
+
+          display: flex;
+          align-items: center;
+
+          .icon {
+            border-radius: 5px;
+            margin-top: -1px;
+            background: url('../../assets/images/fb-icon-share.png') 5px 3px
+              no-repeat;
+            border-right: 1px solid #425e85;
+            width: 21px;
+            height: 21px;
+          }
+
+          .text {
+            color: #fff;
+            font-size: 12px;
+            line-height: 21px;
+            padding: 3px 6px;
+            text-shadow: 1px 1px 1px #304871;
+          }
+        }
+      }
+
+      .vkShare {
+        outline: 0;
+        border: 0;
+
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+   <svg
+          preserveAspectRatio='xMidYMid meet'
+          data-bbox='0.472 2 48.862 20'
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0.472 2 48.862 20'
+          height='24'
+          width='50'
+          data-type='color'
+          role='img'
+          aria-labelledby='svgcid-smsnnm-xqmugw'
+        >
+          <title id='svgcid-smsnnm-xqmugw'>Yandex Pay logo</title>
+          <g>
+            <g clip-path='url(#svgcid--ugld34qlgnu3)'>
+              <path
+                fill='#F23F1F'
+                d='M20.404 12c0 5.523-4.462 10-9.966 10S.472 17.523.472 12 4.934 2 10.438 2s9.966 4.477 9.966 10z'
+                data-color='1'
+              ></path>
+              <path
+                fill='#ffffff'
+                d='M11.765 7.666h-.921c-1.69 0-2.58.858-2.58 2.123 0 1.43.615 2.1 1.877 2.959l1.043.704-2.996 4.488H5.949l2.689-4.015c-1.548-1.111-2.414-2.19-2.414-4.015 0-2.288 1.59-3.85 4.609-3.85h2.995v11.87h-2.063V7.666Z'
+                data-color='2'
+              ></path>
+            </g>
+            <path
+              fill='#000000'
+              d='M25.047 5.902v11.931h2.038v-4.257h.993c2.661 0 4.362-1.253 4.362-3.897 0-2.403-1.583-3.777-4.345-3.777h-3.048Zm3.048 6.06h-1.01V7.516h1.078c1.431 0 2.206.67 2.206 2.163 0 1.562-.859 2.283-2.274 2.283Z'
+              data-color='3'
+            ></path>
+            <path
+              fill='#000000'
+              d='m41.115 17.833-3.082-11.93h-2.576l-3.1 11.93h1.752l.657-2.61h3.587l.64 2.61h2.122ZM35.17 13.61l1.398-5.527 1.381 5.527H35.17Z'
+              data-color='3'
+            ></path>
+            <path
+              fill='#000000'
+              d='M49.333 5.902H47.43l-2.408 4.979-2.392-4.979h-2.19l3.437 6.833v5.098h2.037v-5.098l3.42-6.833Z'
+              data-color='3'
+            ></path>
+            <defs fill='none'>
+              <clipPath id='svgcid--ugld34qlgnu3'>
+                <path
+                  transform='translate(.472 2)'
+                  fill='#ffffff'
+                  d='M19.932 0v20H0V0h19.932z'
+                ></path>
+              </clipPath>
+            </defs>
+          </g>
+        </svg>

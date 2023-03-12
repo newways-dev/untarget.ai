@@ -1,0 +1,68 @@
+.footer {
+  background: #fbfbfa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  .copyright {
+    line-height: 1.79em;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .top,
+  .bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .bottom {
+    margin-top: -25px;
+    gap: 22px;
+  }
+
+  .visa {
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .master_card {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .mir {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .ya_pay {
+    svg {
+      width: 60px;
+      height: 70px;
+    }
+  }
+  .tinkoff {
+    svg {
+      width: 150px;
+      height: 70px;
+    }
+  }
+  .spb {
+    svg {
+      width: 80px;
+      height: 60px;
+    }
+  }
+}
