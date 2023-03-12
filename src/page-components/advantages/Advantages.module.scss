@@ -5,7 +5,24 @@
   padding: 40px 140px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
+
+  @media screen and (max-width: 1366px) {
+    padding: 30px 60px;
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 450px) {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }

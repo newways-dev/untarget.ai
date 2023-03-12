@@ -1,20 +1,17 @@
 import clsx from 'clsx'
+import { useSelector } from 'react-redux'
 import { Outlet } from 'react-router-dom'
-import { ReactNode } from 'react'
+import { selectMenu } from '../redux/mobileMenu/selector'
 import { Footer } from './footer'
 import { Header } from './header'
-
 import styles from './Layout.module.scss'
 
-// interface LayoutProps {
-//   children: ReactNode
-// }
-
 export const Layout = () => {
+  const { openMenu } = useSelector(selectMenu)
+
   return (
-    <div className={clsx(styles.layout)}>
+    <div className={clsx(styles.layout, { [styles.hideScroll]: openMenu })}>
       <Header />
-      {/* <main className={styles.main}>{children}</main> */}
       <main className={styles.main}>
         <Outlet />
       </main>

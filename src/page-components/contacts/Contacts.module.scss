@@ -5,11 +5,18 @@
   padding-bottom: 20px;
   color: #fff;
 
+  padding-left: 30px;
+  padding-right: 30px;
+
   .title {
     line-height: 1.34em;
     text-align: center;
     font-size: 50px;
     font-weight: 500;
+
+    @media screen and (max-width: 720px) {
+      font-size: 32px;
+    }
   }
 
   display: flex;
@@ -32,10 +39,18 @@
       align-items: flex-start;
       gap: 18px;
 
+      @media screen and (max-width: 720px) {
+        gap: 14px;
+      }
+
       .item {
         display: flex;
         align-items: center;
         gap: 24px;
+
+        @media screen and (max-width: 720px) {
+          gap: 16px;
+        }
       }
     }
     .social {

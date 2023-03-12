@@ -1,3 +1,5 @@
+export * from './intro'
+export * from './tour'
 export * from './prices'
 export * from './advantages'
 export * from './contacts'

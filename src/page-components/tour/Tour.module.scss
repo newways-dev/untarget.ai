@@ -1,0 +1,116 @@
+.tour {
+  background-color: var(--background-white);
+  width: 100%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 940px;
+    width: 100%;
+
+    @media screen and (max-width: 1366px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 720px) {
+      gap: 10px;
+    }
+
+    .title {
+      line-height: 1.34em;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 1366px) {
+        font-size: 32px;
+      }
+    }
+
+    .desc {
+      line-height: 1.75em;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 1366px) {
+        font-size: 16px;
+      }
+    }
+
+    .step {
+      margin-top: 50px;
+
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
+
+      img {
+        @media screen and (max-width: 1366px) {
+          max-width: 400px;
+        }
+        @media screen and (max-width: 720px) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      .stepTwoImg {
+        @media screen and (max-width: 720px) {
+          margin-top: -130px;
+        }
+      }
+
+      .info {
+        .stepTitle {
+          font-size: 26px;
+          margin-bottom: 30px;
+
+          @media screen and (max-width: 1366px) {
+            margin-bottom: 15px;
+          }
+        }
+        .stepDesc {
+          font-size: 18px;
+          margin-bottom: 50px;
+
+          @media screen and (max-width: 1366px) {
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+        }
+        .stepAbout {
+          font-size: 18px;
+
+          @media screen and (max-width: 1366px) {
+            font-size: 16px;
+          }
+        }
+
+        .notes {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
