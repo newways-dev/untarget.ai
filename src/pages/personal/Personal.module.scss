@@ -1,0 +1,43 @@
+.personal {
+  .wrapper {
+    padding-top: 20px;
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    .nav {
+      .links {
+        background: #fbfbfa;
+        border: 1px solid #d0d0d0;
+        padding: 14px 24px;
+
+        max-width: 250px;
+
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .link {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+
+            &:hover {
+              color: #f55139;
+            }
+          }
+
+          .active {
+            color: #f55139;
+          }
+        }
+      }
+    }
+  }
+}
