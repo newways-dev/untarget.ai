@@ -1,5 +1,5 @@
 import { ReactSVG } from 'react-svg'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { animateScroll as scroll } from 'react-scroll'
 import logo from '../../assets/images/logo-transparent.png'
@@ -14,6 +14,16 @@ export const Header = () => {
   const { openMenu } = useSelector(selectMenu)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+
+  const handleLink = (value: number) => {
+    if (pathname === '/') {
+      scroll.scrollTo(value, 0)
+    } else {
+      navigate('/')
+      scroll.scrollTo(value, 0)
+    }
+  }
 
   return (
     <header className={styles.header}>
@@ -32,10 +42,10 @@ export const Header = () => {
           <p>info@untarget.ai</p>
         </div>
         <ul className={styles.links}>
-          <li onClick={() => scroll.scrollTo(0, 0)}>Главная</li>
-          <li onClick={() => scroll.scrollTo(1450, 0)}>О сервисе</li>
-          <li onClick={() => scroll.scrollTo(5000, 0)}>Цены</li>
-          <li onClick={() => scroll.scrollTo(6000, 0)}>Контакты</li>
+          <li onClick={() => handleLink(0)}>Главная</li>
+          <li onClick={() => handleLink(1450)}>О сервисе</li>
+          <li onClick={() => handleLink(5000)}>Цены</li>
+          <li onClick={() => handleLink(6000)}>Контакты</li>
           <li>
             <Link to='/statistics'>Статистика</Link>
           </li>

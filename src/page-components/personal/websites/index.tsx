@@ -1,6 +1,5 @@
 import { ReactSVG } from 'react-svg'
 import styles from './Websites.module.scss'
-import copy from '../../../assets/icons/copy.png'
 
 export const Websites = () => {
   return (
@@ -32,34 +31,113 @@ export const Websites = () => {
         </p>
       </div>
       <div className={styles.addWebsite}>
-        <div>
-          <label htmlFor=''>Сайт *</label>
-          <input type='text' />
+        <div className={styles.wrapper}>
+          <div className={styles.addInput}>
+            <div className={styles.addInputWrapper}>
+              <label htmlFor=''>Сайт *</label>
+              <input type='text' placeholder='https://example.com' />
+            </div>
+            <button>Добавить</button>
+          </div>
+          <p className={styles.status}>В процессе...</p>
         </div>
-        <button>Добавить</button>
       </div>
       <div className={styles.websitesList}>
-        <p>Список сайтов</p>
-        <div>
-          <div>
-            <p className={styles.title}>I am Whiskers</p>
-            <p>Add your content to connect to a database</p>
+        <p className={styles.title}>Список сайтов</p>
+        <div className={styles.websiteWrapper}>
+          <div className={styles.textWrapper}>
+            <div className={styles.heading}>
+              <p className={styles.name}>I am Whiskers</p>
+              <p>Add your content to connect to a database</p>
+            </div>
+            <div className={styles.desc}>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex Metrica</strong>
+                </span>
+                <span>Mixed</span>
+              </p>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex API</strong>
+                </span>
+                <span>Подключен</span>
+              </p>
+            </div>
           </div>
-          <div>
-            <p>
-              <span className={styles.title}>Yandex Metrica</span>
-              <span className={styles.status}>Mixed</span>
-            </p>
-            <p>
-              <span className={styles.title}>Yandex API</span>
-              <span className={styles.status}>Подключен</span>
-            </p>
-          </div>
-          <div>
+          <div className={styles.content}>
             <textarea />
-            <ReactSVG src={copy} />
+            {/* <ReactSVG src={copy} /> */}
             <button>Удалить</button>
           </div>
+        </div>
+        <div className={styles.websiteWrapper}>
+          <div className={styles.textWrapper}>
+            <div className={styles.heading}>
+              <p className={styles.name}>I am Whiskers</p>
+              <p>Add your content to connect to a database</p>
+            </div>
+            <div className={styles.desc}>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex Metrica</strong>
+                </span>
+                <span>Mixed</span>
+              </p>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex API</strong>
+                </span>
+                <span>Подключен</span>
+              </p>
+            </div>
+          </div>
+          <div className={styles.content}>
+            <textarea />
+
+            <button>Удалить</button>
+          </div>
+        </div>
+        <div className={styles.websiteWrapper}>
+          <div className={styles.textWrapper}>
+            <div className={styles.heading}>
+              <p className={styles.name}>I am Whiskers</p>
+              <p>Add your content to connect to a database</p>
+            </div>
+            <div className={styles.desc}>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex Metrica</strong>
+                </span>
+                <span>Mixed</span>
+              </p>
+              <p>
+                <span className={styles.apiName}>
+                  <strong>Yandex API</strong>
+                </span>
+                <span>Подключен</span>
+              </p>
+            </div>
+          </div>
+          <div className={styles.content}>
+            <textarea />
+            {/* <ReactSVG src={copy} /> */}
+            <button>Удалить</button>
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottom}>
+        <div className={styles.line} />
+        <div className={styles.text}>
+          <p>
+            {
+              'Можно дополнительно повысить качество защиты включив в ссылки перехода по объявлению UTM-метки, пример: https://example.com/?utm_source=yandex&utm_medium=cpc&utm_campaign={campaign_id}&utm_content=phrase_id|{phrase_id}|gid|{gbid}|aid|{ad_id}|adp|{addphrases}&utm_term={keyword}&type={source_type}&source={source}'
+            }
+          </p>
+          <p>
+            Для удобства можно воспользоваться{' '}
+            <span>генератором UTM меток</span>
+          </p>
         </div>
       </div>
     </div>
