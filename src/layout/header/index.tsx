@@ -1,5 +1,5 @@
 import { ReactSVG } from 'react-svg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { animateScroll as scroll } from 'react-scroll'
 import logo from '../../assets/images/logo-transparent.png'
@@ -13,12 +13,16 @@ import styles from './Header.module.scss'
 export const Header = () => {
   const { openMenu } = useSelector(selectMenu)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
         <img
-          onClick={() => scroll.scrollToTop()}
+          onClick={() => {
+            scroll.scrollToTop()
+            navigate('/')
+          }}
           className={styles.logo}
           src={logo}
           alt=''

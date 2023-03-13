@@ -1,0 +1,42 @@
+.profileCard {
+  background: #fbfbfa;
+  border: 1px solid #d0d0d0;
+  padding: 14px 24px;
+
+  margin-bottom: 15px;
+  min-width: 250px;
+  width: 100%;
+
+  padding: 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .dots {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

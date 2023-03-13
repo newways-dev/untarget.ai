@@ -1,0 +1,113 @@
+.visits {
+  width: 100%;
+  margin-top: 40px;
+
+  .wrapper {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    .select {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .checkboxSection {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      margin-bottom: 22px;
+      margin-top: 10px;
+
+      .checkboxContainer {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        input:checked ~ .checkmark {
+          background-color: #fff;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #eee;
+
+          border: 1px solid black;
+        }
+
+        .unchecked {
+          border: 1px solid red;
+        }
+
+        .checkmark:after {
+          content: '';
+          position: absolute;
+          display: none;
+        }
+
+        input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkmark:after {
+          left: 7px;
+          top: 4px;
+          width: 3px;
+          height: 7px;
+          border: solid gray;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .title {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+
+    select {
+      width: 300px;
+      background: none;
+      border: 0;
+      border-bottom: 2px solid gray;
+
+      font-size: 20px;
+
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 800px;
+  }
+}

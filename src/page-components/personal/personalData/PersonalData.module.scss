@@ -1,0 +1,141 @@
+.personalData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding-top: 25px;
+
+  .account {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 30px;
+
+    .text {
+      .title {
+        font-size: 26px;
+      }
+      .desc {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .reset {
+        border: 0;
+        background: none;
+        border: 1px solid #8c8c8c;
+        color: #8c8c8c;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+      }
+
+      .update {
+        border: 0;
+        background: #8c8c8c;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+
+  .info {
+    padding-top: 30px;
+    font-size: 14px;
+    .title {
+      font-size: 20px;
+    }
+    .desc {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .emailShow {
+      opacity: 0.7;
+    }
+    .emailDesc {
+      opacity: 0.7;
+    }
+
+    .fields {
+      margin-top: 16px;
+      margin-bottom: 30px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        input {
+          max-width: 240px;
+          height: 34px;
+
+          background: none;
+          border: 1px solid #e3e3e3;
+
+          padding: 10px;
+          font-size: 16px;
+          color: var(--color-black);
+
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: var(--color-black);
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: var(--color-black);
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: var(--color-black);
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      justify-content: end;
+
+      .reset {
+        border: 0;
+        background: none;
+        border: 1px solid #8c8c8c;
+        color: #8c8c8c;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+      }
+
+      .update {
+        border: 0;
+        background: #8c8c8c;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+}

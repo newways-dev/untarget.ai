@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="1 7 22 10" class="feather feather-link-2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-type="ugc">
+    <g>
+        <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3" fill="none"/>
+        <path d="M8 12h8" fill="none"/>
+    </g>
+</svg>

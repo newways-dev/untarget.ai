@@ -91,16 +91,16 @@ export const Personal = () => {
         <div className={styles.content}>
           {activePage === PERSONAL_PAGES.Websites && <Websites />}
           {activePage === PERSONAL_PAGES.Billing && <Billing />}
-          {activePage === PERSONAL_PAGES.Visits && <Visits />}
-          {activePage === PERSONAL_PAGES.VisitsStatistics && (
-            <VisitsStatistics />
-          )}
-          {activePage === PERSONAL_PAGES.AdvertisingStatistics && (
-            <AdvertisingStatistics />
-          )}
           {activePage === PERSONAL_PAGES.Discounts && <Discount />}
           {activePage === PERSONAL_PAGES.PersonalData && <PersonalData />}
         </div>
+      </div>
+      <div className={styles.content}>
+        {activePage === PERSONAL_PAGES.Visits && <Visits />}
+        {activePage === PERSONAL_PAGES.VisitsStatistics && <VisitsStatistics />}
+        {activePage === PERSONAL_PAGES.AdvertisingStatistics && (
+          <AdvertisingStatistics />
+        )}
       </div>
     </div>
   )
