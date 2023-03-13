@@ -32,11 +32,13 @@ export const Header = () => {
           <p>info@untarget.ai</p>
         </div>
         <ul className={styles.links}>
-          <li>Главная</li>
-          <li>О сервисе</li>
-          <li>Цены</li>
-          <li>Контакты</li>
-          <li>Статистика</li>
+          <li onClick={() => scroll.scrollTo(0, 0)}>Главная</li>
+          <li onClick={() => scroll.scrollTo(1450, 0)}>О сервисе</li>
+          <li onClick={() => scroll.scrollTo(5000, 0)}>Цены</li>
+          <li onClick={() => scroll.scrollTo(6000, 0)}>Контакты</li>
+          <li>
+            <Link to='/statistics'>Статистика</Link>
+          </li>
           <Link to='/sign-up'>
             <li>
               <ReactSVG className={styles.login} src={login} />
