@@ -41,7 +41,7 @@ export const MobileMenu = () => {
           <li onClick={() => handleLink(1400)}>О сервисе</li>
           <li onClick={() => handleLink(5000)}>Цены</li>
           <li onClick={() => handleLink(6300)}>Контакты</li>
-          <li>
+          <li onClick={() => dispatch(setOpen(false))}>
             <Link to='/statistics'>Статистика</Link>
           </li>
         </ul>
