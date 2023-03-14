@@ -3,6 +3,10 @@
 
   .wrapper {
     padding-top: 20px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
@@ -11,7 +15,33 @@
     align-items: flex-start;
     gap: 40px;
 
+    @media screen and (max-width: 1366px) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
     .nav {
+      .profileCard {
+        @media screen and (max-width: 720px) {
+          display: none;
+        }
+      }
+
+      .mobileProfileCard {
+        display: none;
+
+        @media screen and (max-width: 720px) {
+          display: block;
+          width: 100%;
+        }
+      }
+
       .links {
         background: #fbfbfa;
         border: 1px solid #d0d0d0;
@@ -19,6 +49,10 @@
 
         min-width: 250px;
         width: 100%;
+
+        @media screen and (max-width: 720px) {
+          display: none;
+        }
 
         ul {
           list-style: none;
@@ -41,10 +75,37 @@
           }
         }
       }
+
+      .mobileLinks {
+        display: none;
+
+        @media screen and (max-width: 720px) {
+          display: block;
+        }
+
+        width: 100%;
+
+        select {
+          width: 100%;
+          border: 1px solid #cdcdcc;
+          outline: 0;
+          background: none;
+
+          margin-top: 20px;
+          padding: 15px;
+          padding-left: 20px;
+          font-size: 18px;
+        }
+      }
     }
 
     .content {
       width: 100%;
+
+      @media screen and (max-width: 720px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   }
 

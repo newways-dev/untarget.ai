@@ -1,5 +1,6 @@
 import { ReactSVG } from 'react-svg'
 import styles from './Websites.module.scss'
+import copy from '../../../assets/icons/copy.svg'
 
 export const Websites = () => {
   return (
@@ -67,7 +68,7 @@ export const Websites = () => {
           </div>
           <div className={styles.content}>
             <textarea />
-            {/* <ReactSVG src={copy} /> */}
+            <ReactSVG className={styles.copyIcon} src={copy} />
             <button>Удалить</button>
           </div>
         </div>
@@ -94,7 +95,7 @@ export const Websites = () => {
           </div>
           <div className={styles.content}>
             <textarea />
-
+            <ReactSVG className={styles.copyIcon} src={copy} />
             <button>Удалить</button>
           </div>
         </div>
@@ -121,7 +122,7 @@ export const Websites = () => {
           </div>
           <div className={styles.content}>
             <textarea />
-            {/* <ReactSVG src={copy} /> */}
+            <ReactSVG className={styles.copyIcon} src={copy} />
             <button>Удалить</button>
           </div>
         </div>
@@ -136,7 +137,9 @@ export const Websites = () => {
           </p>
           <p>
             Для удобства можно воспользоваться{' '}
-            <span>генератором UTM меток</span>
+            <a href='https://tilda.cc/ru/utm/' target='_blank' rel='noreferrer'>
+              <span>генератором UTM меток</span>
+            </a>
           </p>
         </div>
       </div>

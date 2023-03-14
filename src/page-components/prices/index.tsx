@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Prices.module.scss'
 
 export const Prices = () => {
@@ -11,7 +12,9 @@ export const Prices = () => {
           проверку каждого рекламного визита на защищаемый сайт. Имеется
           партнерская программа.
         </p>
-        <button>Подключить защиту</button>
+        <Link to='/sign-up'>
+          <button>Подключить защиту</button>
+        </Link>
       </div>
     </div>
   )

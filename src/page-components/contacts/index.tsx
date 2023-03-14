@@ -3,7 +3,6 @@ import email from '../../assets/images/email.jpg'
 import telegram from '../../assets/images/telegram.jpg'
 import facebook from '../../assets/images/facebook.jpg'
 import twitter from '../../assets/images/twitter.jpg'
-
 import styles from './Contacts.module.scss'
 
 export const Contacts = () => {
@@ -14,23 +13,51 @@ export const Contacts = () => {
         <div className={styles.info}>
           <div className={styles.item}>
             <img src={phone} alt='' />
-            <p>+7 (495) 147-70-38</p>
+            <a href='tel:+7495147-70-38'>
+              <p>+7 (495) 147-70-38</p>
+            </a>
           </div>
           <div className={styles.item}>
             <img src={email} alt='' />
-            <p>info@untarget.ai</p>
+            <a href='mailto:info@untarget.ai'>
+              <p>info@untarget.ai</p>
+            </a>
           </div>
           <div className={styles.item}>
             <img src={telegram} alt='' />
-            <p>untarget.ai</p>
+            <a href='https://t.me/untarget_ai' target='_blank' rel='noreferrer'>
+              <p>untarget.ai</p>
+            </a>
           </div>
         </div>
         <div className={styles.social}>
           <div>
-            <img src={facebook} alt='' />
-            <img src={twitter} alt='' />
+            <a
+              href='https://www.facebook.com/untarget.ai'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={facebook} alt='' />
+            </a>
+            <a
+              href='https://twitter.com/untarget.ai'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={twitter} alt='' />
+            </a>
           </div>
-          <button className={styles.fbShare}>
+          <button
+            className={styles.fbShare}
+            onClick={() => {
+              window.open(
+                'http://www.facebook.com/sharer.php?u=' +
+                  encodeURIComponent('u'),
+                'wix_share_to_facebook',
+                'width = 635, height = 346'
+              )
+            }}
+          >
             <div>
               <span className={styles.icon} />
               <span className={styles.text}>Share</span>

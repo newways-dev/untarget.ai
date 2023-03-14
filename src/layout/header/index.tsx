@@ -37,6 +37,7 @@ export const Header = () => {
           src={logo}
           alt=''
         />
+        {/* <ReactSVG className={styles.logo} src={logo} /> */}
         <div className={styles.contacts}>
           <p>+7 (495) 147-70-38</p>
           <p>info@untarget.ai</p>

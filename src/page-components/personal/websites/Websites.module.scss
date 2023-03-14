@@ -1,10 +1,21 @@
 .websites {
   width: 100%;
+  padding: 30px;
+
+  font-family: 'Avenir Light', sans-serif;
+
+  @media screen and (max-width: 1366px) {
+    padding: 20px;
+  }
 
   .title {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1366px) {
+      font-size: 22px;
+    }
 
     span {
       font-style: italic;
@@ -13,7 +24,7 @@
   .border {
     width: 100%;
     margin-left: 100px;
-    padding-left: 20px;
+    padding-left: 30px;
 
     border-left: 3px solid #000;
     height: 100px;
@@ -21,6 +32,22 @@
     font-size: 18px;
 
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1366px) {
+      font-size: 14px;
+      margin-left: 30px;
+      padding-left: 20px;
+      width: 70%;
+    }
+
+    @media screen and (max-width: 720px) {
+      border: 0;
+      margin-left: 0px;
+      padding-left: 0px;
+      margin-bottom: 20px;
+
+      width: 80%;
+    }
   }
 
   .addWebsite {
@@ -28,6 +55,14 @@
     display: flex;
     align-items: center;
     width: 100%;
+
+    @media screen and (max-width: 1366px) {
+      margin-top: 160px;
+    }
+
+    @media screen and (max-width: 720px) {
+      margin-top: 100px;
+    }
 
     .wrapper {
       display: flex;
@@ -38,6 +73,10 @@
         display: flex;
         align-items: center;
         gap: 60px;
+
+        @media screen and (max-width: 1366px) {
+          gap: 30px;
+        }
 
         .addInputWrapper {
           display: flex;
@@ -53,6 +92,10 @@
             border: 1px solid #e3e3e3;
             padding: 10px;
             outline: 0;
+
+            @media screen and (max-width: 1366px) {
+              width: 150px;
+            }
           }
         }
       }
@@ -65,6 +108,7 @@
     }
 
     button {
+      cursor: pointer;
       margin-top: 22px;
       height: 40px;
       width: 200px;
@@ -72,6 +116,10 @@
       background: none;
       border: 1px solid var(--color-black);
       font-size: 18px;
+
+      @media screen and (max-width: 1366px) {
+        width: 150px;
+      }
     }
 
     padding-bottom: 50px;
@@ -82,6 +130,10 @@
   .websitesList {
     margin-top: 20px;
     width: 100%;
+
+    @media screen and (max-width: 1366px) {
+      width: 90%;
+    }
 
     .title {
       font-size: 24px;
@@ -102,6 +154,11 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 720px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
         .heading {
           display: flex;
           flex-direction: column;
@@ -109,7 +166,7 @@
 
           .name {
             font-size: 26px;
-            font-weight: 500;
+            font-weight: 900;
           }
         }
 
@@ -120,8 +177,9 @@
 
           p {
             display: flex;
-            span {
-              margin-left: 40px;
+
+            .apiName {
+              margin-right: 20px;
             }
           }
         }
@@ -131,6 +189,7 @@
         margin-top: 60px;
         display: flex;
         flex-direction: column;
+        position: relative;
 
         textarea {
           width: 100%;
@@ -139,6 +198,20 @@
           outline: 0;
           padding: 10px;
           font-size: 18px;
+
+          resize: none;
+        }
+
+        .copyIcon {
+          cursor: pointer;
+          position: absolute;
+          right: -35px;
+          top: 0;
+
+          svg {
+            width: 30px;
+            height: 30px;
+          }
         }
 
         button {
@@ -185,6 +258,10 @@
       p {
         font-size: 20px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 720px) {
+          font-size: 14px;
+        }
 
         span {
           text-decoration: underline;

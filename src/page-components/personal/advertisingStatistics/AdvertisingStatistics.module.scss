@@ -5,11 +5,25 @@
 
   margin-top: 40px;
 
+  @media screen and (max-width: 1366px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .title {
     font-size: 28px;
+
+    @media screen and (max-width: 720px) {
+      font-size: 18px;
+    }
   }
 
   .desc {
+    @media screen and (max-width: 720px) {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
     span {
       text-decoration: underline;
       margin-right: 5px;
@@ -18,22 +32,9 @@
     display: flex;
     align-items: center;
 
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      cursor: pointer;
-      border: 0;
-      background: none;
-
-      width: 30px;
-      height: 30px;
-
-      svg {
-        width: 25px;
-        height: 25px;
-      }
+    svg {
+      width: 25px;
+      height: 25px;
     }
   }
 

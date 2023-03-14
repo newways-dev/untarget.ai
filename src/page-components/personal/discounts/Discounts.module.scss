@@ -12,6 +12,10 @@
       justify-content: space-around;
       margin-bottom: 50px;
 
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
+
       .link {
         svg {
           width: 45px;
@@ -42,6 +46,10 @@
       align-items: center;
       justify-content: space-around;
       margin-bottom: 70px;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
 
       .icon {
         svg {
@@ -77,6 +85,10 @@
       justify-content: space-around;
       margin-bottom: 70px;
 
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
+
       .icon {
         svg {
           width: 220px;
@@ -110,6 +122,10 @@
       align-items: center;
       justify-content: space-around;
       margin-bottom: 70px;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
 
       .icon {
         svg {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Intro.module.scss'
 
 export const Intro = () => {
@@ -8,7 +9,9 @@ export const Intro = () => {
         Поможем увеличить возврат расходов на рекламу, защищая ваш сайт от
         кликфрода.
       </p>
-      <button>Подключить защиту</button>
+      <Link to='/sign-up'>
+        <button>Подключить защиту</button>
+      </Link>
     </div>
   )
 }

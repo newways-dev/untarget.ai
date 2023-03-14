@@ -1,13 +1,26 @@
 import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { ReactSVG } from 'react-svg'
 import close from '../../assets/icons/close.svg'
 import { setOpen } from '../../redux/mobileMenu/slice'
-
+import { animateScroll as scroll } from 'react-scroll'
 import styles from './MobileMenu.module.scss'
 
 export const MobileMenu = () => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const { pathname } = useLocation()
+
+  const handleLink = (value: number) => {
+    if (pathname === '/') {
+      scroll.scrollTo(value, 0)
+      dispatch(setOpen(false))
+    } else {
+      dispatch(setOpen(false))
+      navigate('/')
+      scroll.scrollTo(value, 0)
+    }
+  }
 
   return (
     <div className={styles.mobileMenu}>
@@ -24,17 +37,19 @@ export const MobileMenu = () => {
       </div>
       <div className={styles.wrapper}>
         <ul className={styles.links}>
-          <li>Главная</li>
-          <li>О сервисе</li>
-          <li>Цены</li>
-          <li>Контакты</li>
-          <li>Статистика</li>
+          <li onClick={() => handleLink(0)}>Главная</li>
+          <li onClick={() => handleLink(1400)}>О сервисе</li>
+          <li onClick={() => handleLink(5000)}>Цены</li>
+          <li onClick={() => handleLink(6300)}>Контакты</li>
+          <li>
+            <Link to='/statistics'>Статистика</Link>
+          </li>
         </ul>
         <div className={styles.buttons}>
-          <Link to='/sign-up'>
+          <Link onClick={() => dispatch(setOpen(false))} to='/sign-up'>
             <button className={styles.register}>Зарегистироваться</button>
           </Link>
-          <Link to='/sign-in'>
+          <Link onClick={() => dispatch(setOpen(false))} to='/sign-in'>
             <button className={styles.login}>Войти</button>
           </Link>
         </div>

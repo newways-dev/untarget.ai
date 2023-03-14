@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { useState } from 'react'
-import { ProfileCard } from '../../components'
+import { MobileProfileCard, ProfileCard } from '../../components'
 import {
   AdvertisingStatistics,
   Billing,
@@ -22,7 +22,8 @@ export const Personal = () => {
     <div className={styles.personal}>
       <div className={styles.wrapper}>
         <div className={styles.nav}>
-          <ProfileCard />
+          <ProfileCard className={styles.profileCard} />
+          <MobileProfileCard className={styles.mobileProfileCard} />
           <div className={styles.links}>
             <ul>
               <li
@@ -86,6 +87,70 @@ export const Personal = () => {
                 Личные данные
               </li>
             </ul>
+          </div>
+          <div className={styles.mobileLinks}>
+            <select>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.Websites)}
+                className={clsx(styles.link, {
+                  [styles.active]: activePage === PERSONAL_PAGES.Websites,
+                })}
+              >
+                Сайты
+              </option>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.Billing)}
+                className={clsx(styles.link, {
+                  [styles.active]: activePage === PERSONAL_PAGES.Billing,
+                })}
+              >
+                Биллинг
+              </option>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.Visits)}
+                className={clsx(styles.link, {
+                  [styles.active]: activePage === PERSONAL_PAGES.Visits,
+                })}
+              >
+                Визиты
+              </option>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.VisitsStatistics)}
+                className={clsx(styles.link, {
+                  [styles.active]:
+                    activePage === PERSONAL_PAGES.VisitsStatistics,
+                })}
+              >
+                Статистика визитов
+              </option>
+              <option
+                onClick={() =>
+                  setActivePage(PERSONAL_PAGES.AdvertisingStatistics)
+                }
+                className={clsx(styles.link, {
+                  [styles.active]:
+                    activePage === PERSONAL_PAGES.AdvertisingStatistics,
+                })}
+              >
+                Статистика РК
+              </option>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.Discounts)}
+                className={clsx(styles.link, {
+                  [styles.active]: activePage === PERSONAL_PAGES.Discounts,
+                })}
+              >
+                Скидки и бонусы
+              </option>
+              <option
+                onClick={() => setActivePage(PERSONAL_PAGES.PersonalData)}
+                className={clsx(styles.link, {
+                  [styles.active]: activePage === PERSONAL_PAGES.PersonalData,
+                })}
+              >
+                Личные данные
+              </option>
+            </select>
           </div>
         </div>
         <div className={styles.content}>

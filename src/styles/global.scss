@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Avenir Light';
+  src: local('Avenir Light'), local('avenir-light'),
+    url('../assets/fonts/avenir-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;

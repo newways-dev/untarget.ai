@@ -9,9 +9,7 @@ export const AdvertisingStatistics = () => {
       <p className={styles.title}>Статистика рекламных компаний</p>
       <p className={styles.desc}>
         Дашборд включается по запросу в <span>&nbsp;поддержку</span>
-        <button>
-          <ReactSVG src={telegram} />
-        </button>
+        <ReactSVG src={telegram} />
       </p>
       <p className={styles.example}>Пример дашборда</p>
       <img src={image} alt='' />
