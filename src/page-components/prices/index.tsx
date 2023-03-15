@@ -3,7 +3,7 @@ import styles from './Prices.module.scss'
 
 export const Prices = () => {
   return (
-    <div className={styles.prices}>
+    <div className={styles.prices} id='prices'>
       <div className={styles.wrapper}>
         <p className={styles.title}>Цены</p>
         <p className={styles.desc}>Платите по мере использования</p>

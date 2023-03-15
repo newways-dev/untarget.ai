@@ -49,7 +49,9 @@ export const Websites = () => {
           <div className={styles.textWrapper}>
             <div className={styles.heading}>
               <p className={styles.name}>I am Whiskers</p>
-              <p>Add your content to connect to a database</p>
+              <p className={styles.desc}>
+                Add your content to connect to a database
+              </p>
             </div>
             <div className={styles.desc}>
               <p>
@@ -62,7 +64,7 @@ export const Websites = () => {
                 <span className={styles.apiName}>
                   <strong>Yandex API</strong>
                 </span>
-                <span>Подключен</span>
+                <span className={styles.status}>Подключен</span>
               </p>
             </div>
           </div>
@@ -76,7 +78,9 @@ export const Websites = () => {
           <div className={styles.textWrapper}>
             <div className={styles.heading}>
               <p className={styles.name}>I am Whiskers</p>
-              <p>Add your content to connect to a database</p>
+              <p className={styles.desc}>
+                Add your content to connect to a database
+              </p>
             </div>
             <div className={styles.desc}>
               <p>
@@ -89,7 +93,7 @@ export const Websites = () => {
                 <span className={styles.apiName}>
                   <strong>Yandex API</strong>
                 </span>
-                <span>Подключен</span>
+                <span className={styles.status}>Подключен</span>
               </p>
             </div>
           </div>
@@ -103,7 +107,9 @@ export const Websites = () => {
           <div className={styles.textWrapper}>
             <div className={styles.heading}>
               <p className={styles.name}>I am Whiskers</p>
-              <p>Add your content to connect to a database</p>
+              <p className={styles.desc}>
+                Add your content to connect to a database
+              </p>
             </div>
             <div className={styles.desc}>
               <p>
@@ -116,7 +122,7 @@ export const Websites = () => {
                 <span className={styles.apiName}>
                   <strong>Yandex API</strong>
                 </span>
-                <span>Подключен</span>
+                <span className={styles.status}>Подключен</span>
               </p>
             </div>
           </div>

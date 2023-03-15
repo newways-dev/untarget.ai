@@ -7,25 +7,25 @@ import styles from './Contacts.module.scss'
 
 export const Contacts = () => {
   return (
-    <div className={styles.contacts}>
+    <div className={styles.contacts} id='contacts'>
       <p className={styles.title}>Контакты</p>
       <div className={styles.wrapper}>
         <div className={styles.info}>
           <div className={styles.item}>
-            <img src={phone} alt='' />
             <a href='tel:+7495147-70-38'>
+              <img src={phone} alt='' />
               <p>+7 (495) 147-70-38</p>
             </a>
           </div>
           <div className={styles.item}>
-            <img src={email} alt='' />
             <a href='mailto:info@untarget.ai'>
+              <img src={email} alt='' />
               <p>info@untarget.ai</p>
             </a>
           </div>
           <div className={styles.item}>
-            <img src={telegram} alt='' />
             <a href='https://t.me/untarget_ai' target='_blank' rel='noreferrer'>
+              <img src={telegram} alt='' />
               <p>untarget.ai</p>
             </a>
           </div>

@@ -37,6 +37,12 @@
       .code {
         opacity: 0.6;
       }
+
+      p {
+        span {
+          background: #fcc5bd;
+        }
+      }
     }
   }
 
@@ -74,6 +80,10 @@
 
       li {
         line-height: 26px;
+
+        span {
+          background: #fcc5bd;
+        }
       }
     }
   }
@@ -104,6 +114,10 @@
 
     p {
       margin-bottom: 20px;
+
+      span {
+        background: #fcc5bd;
+      }
     }
 
     ul {
@@ -137,6 +151,13 @@
       .title {
         font-size: 28px;
         font-weight: 500;
+      }
+    }
+
+    p {
+      span {
+        font-weight: 500;
+        background: #fcc5bd;
       }
     }
   }

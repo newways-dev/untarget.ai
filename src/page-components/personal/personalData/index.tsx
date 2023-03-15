@@ -34,7 +34,7 @@ export const PersonalData = () => {
           </div>
           <div className={styles.email}>
             <label htmlFor='name'>Эл. почта *</label>
-            <input placeholder='test@gmail.com' type='text' />
+            <input disabled placeholder='test@gmail.com' type='text' />
           </div>
           <div className={styles.phone}>
             <label htmlFor='name'>Телефон</label>

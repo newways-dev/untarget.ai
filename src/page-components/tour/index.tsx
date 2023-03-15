@@ -1,12 +1,12 @@
-import stepOne from '../../assets/images/step0ne.jpg'
-import stepTwo from '../../assets/images/stepTwo.jpg'
-import stepThree from '../../assets/images/stepThree.jpg'
-import stepFour from '../../assets/images/stepFour.jpg'
+import stepOne from '../../assets/images/stepOne.webp'
+import stepTwo from '../../assets/images/stepTwo.webp'
+import stepThree from '../../assets/images/stepThree.webp'
+import stepFour from '../../assets/images/stepFour.webp'
 import styles from './Tour.module.scss'
 
 export const Tour = () => {
   return (
-    <div className={styles.tour}>
+    <div className={styles.tour} id='service'>
       <div className={styles.wrapper}>
         <p className={styles.title}>Тур по сервису</p>
         <p className={styles.desc}>
@@ -56,8 +56,9 @@ export const Tour = () => {
                 данных.
               </span>
               <span>
-                *** В ЛК "в два клика" предоставляется доступ к Yandex Direct,
-                Yandex Metrica и Yandex Audience (Аудитории). Сервис Аудитории
+                *** В ЛК "в два клика" предоставляется доступ к{' '}
+                <span>Yandex Direct</span>, <span>Yandex Metrica</span> и{' '}
+                <span>Yandex Audience</span> (Аудитории). Сервис Аудитории
                 используется для задействования в защите глобальных сегментов
                 ранее заблокированных ботов и подозрительных посетителей, а
                 также для построения сегментов, похожих на боты.

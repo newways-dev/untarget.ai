@@ -9,6 +9,7 @@
   }
   .title {
     font-size: 28px;
+    font-style: italic;
     font-weight: 600;
     margin-bottom: 20px;
 
@@ -164,8 +165,13 @@
           gap: 20px;
 
           .name {
-            font-size: 26px;
+            font-size: 30px;
             font-weight: 900;
+          }
+
+          .desc {
+            font-size: 13px;
+            color: #707070;
           }
         }
 
@@ -176,9 +182,12 @@
 
           p {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
 
-            .apiName {
-              margin-right: 20px;
+            .status {
+              font-size: 12px;
             }
           }
         }
@@ -257,6 +266,7 @@
       p {
         font-size: 20px;
         margin-bottom: 20px;
+        line-height: 26px;
 
         @media screen and (max-width: 720px) {
           font-size: 14px;

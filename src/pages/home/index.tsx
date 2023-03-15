@@ -5,7 +5,7 @@ import {
   Prices,
   Tour,
 } from '../../page-components'
-import background from '../../assets/images/background.png'
+import background from '../../assets/images/background.webp'
 
 import styles from './Home.module.scss'
 

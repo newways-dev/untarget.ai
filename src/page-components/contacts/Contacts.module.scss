@@ -51,6 +51,12 @@
         @media screen and (max-width: 720px) {
           gap: 16px;
         }
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 26px;
+        }
       }
     }
     .social {

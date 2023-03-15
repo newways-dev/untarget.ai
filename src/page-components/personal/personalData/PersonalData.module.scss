@@ -68,14 +68,17 @@
 
     .emailTitle {
       margin-bottom: 5px;
+      font-size: 15px;
     }
     .emailShow {
-      opacity: 0.7;
+      opacity: 0.8;
       margin-bottom: 5px;
+      font-size: 15px;
     }
     .emailDesc {
-      opacity: 0.7;
+      opacity: 0.6;
       margin-bottom: 5px;
+      font-size: 15px;
     }
 
     .fields {
@@ -125,6 +128,27 @@
           &::-ms-input-placeholder {
             /* Microsoft Edge */
             color: var(--color-black);
+          }
+        }
+      }
+
+      .email {
+        input {
+          font-weight: 200;
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #8c8c8c;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #8c8c8c;
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #8c8c8c;
           }
         }
       }
