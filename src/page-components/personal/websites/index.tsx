@@ -44,7 +44,7 @@ export const Websites = () => {
         </div>
       </div>
       <div className={styles.websitesList}>
-        <p className={styles.title}>Список сайтов</p>
+        <p className={styles.listTitle}>Список сайтов</p>
         <div className={styles.websiteWrapper}>
           <div className={styles.textWrapper}>
             <div className={styles.heading}>

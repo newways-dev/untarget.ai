@@ -5,6 +5,8 @@
 
   margin-top: 40px;
 
+  font-family: 'Avenir Light', sans-serif;
+
   @media screen and (max-width: 1366px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -19,6 +21,7 @@
   }
 
   .desc {
+    font-family: 'Barlow', sans-serif;
     @media screen and (max-width: 720px) {
       font-size: 12px;
       margin-top: 10px;

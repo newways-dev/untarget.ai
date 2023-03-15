@@ -3,6 +3,7 @@ import stepTwo from '../../assets/images/stepTwo.webp'
 import stepThree from '../../assets/images/stepThree.webp'
 import stepFour from '../../assets/images/stepFour.webp'
 import styles from './Tour.module.scss'
+import clsx from 'clsx'
 
 export const Tour = () => {
   return (
@@ -31,7 +32,7 @@ export const Tour = () => {
           </div>
           <img src={stepOne} alt='' />
         </div>
-        <div className={styles.step}>
+        <div className={clsx(styles.step, styles.stepTwo)}>
           <div className={styles.info}>
             <p className={styles.stepTitle}>ШАГ 2</p>
             <p className={styles.stepDesc}>Подключение защиты, 10 мин.</p>
@@ -67,7 +68,7 @@ export const Tour = () => {
           </div>
           <img className={styles.stepTwoImg} src={stepTwo} alt='' />
         </div>
-        <div className={styles.step}>
+        <div className={clsx(styles.step, styles.stepThree)}>
           <div className={styles.info}>
             <p className={styles.stepTitle}>ШАГ 3</p>
             <p className={styles.stepDesc}>
@@ -84,7 +85,7 @@ export const Tour = () => {
           </div>
           <img src={stepThree} alt='' />
         </div>
-        <div className={styles.step}>
+        <div className={clsx(styles.step, styles.stepFour)}>
           <div className={styles.info}>
             <p className={styles.stepTitle}>ШАГ 4</p>
             <p className={styles.stepDesc}>Оплата, 3 мин.</p>

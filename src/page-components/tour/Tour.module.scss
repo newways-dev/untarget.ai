@@ -39,7 +39,7 @@
       font-size: 18px;
       font-weight: 500;
 
-      margin-bottom: 32px;
+      margin-bottom: 44px;
 
       @media screen and (max-width: 1366px) {
         font-size: 16px;
@@ -50,8 +50,6 @@
       display: flex;
       align-items: flex-start;
       gap: 50px;
-
-      margin-bottom: 50px;
 
       @media screen and (max-width: 720px) {
         flex-direction: column;
@@ -96,6 +94,7 @@
         .stepAbout {
           font-size: 18px;
 
+          line-height: 1.75em;
           @media screen and (max-width: 1366px) {
             font-size: 16px;
           }
@@ -110,6 +109,7 @@
           color: var(--color-black);
 
           font-size: 12px;
+          line-height: 1.75em;
 
           span {
             span {
@@ -118,6 +118,19 @@
           }
         }
       }
+    }
+
+    .stepTwo {
+      margin-top: 120px;
+    }
+
+    .stepThree {
+      margin-top: 31px;
+    }
+
+    .stepFour {
+      margin-top: 140px;
+      margin-bottom: 60px;
     }
   }
 }
