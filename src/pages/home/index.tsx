@@ -11,7 +11,7 @@ import styles from './Home.module.scss'
 
 export const Home = () => {
   return (
-    <div className={styles.home}>
+    <section className={styles.home}>
       <Intro />
       <div
         className={styles.image}
@@ -21,6 +21,6 @@ export const Home = () => {
       <Prices />
       <Advantages />
       <Contacts />
-    </div>
+    </section>
   )
 }

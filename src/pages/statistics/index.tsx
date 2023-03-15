@@ -2,7 +2,7 @@ import styles from './Statistics.module.scss'
 
 export const Statistics = () => {
   return (
-    <div className={styles.statistics}>
+    <section className={styles.statistics}>
       <div className={styles.blockedTime}>
         <iframe
           src='https://datalens.yandex/tcxbqdh4tfk4k?_theme=dark'
@@ -23,6 +23,6 @@ export const Statistics = () => {
         height='400'
         title='last-blocked'
       />
-    </div>
+    </section>
   )
 }

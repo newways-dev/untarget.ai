@@ -19,7 +19,7 @@ export const Personal = () => {
   )
 
   return (
-    <div className={styles.personal}>
+    <section className={styles.personal}>
       <div className={styles.wrapper}>
         <div className={styles.nav}>
           <ProfileCard className={styles.profileCard} />
@@ -167,6 +167,6 @@ export const Personal = () => {
           <AdvertisingStatistics />
         )}
       </div>
-    </div>
+    </section>
   )
 }

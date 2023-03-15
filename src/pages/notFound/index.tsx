@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 export const NotFound = () => {
   return (
-    <div className={styles.notFound}>
+    <section className={styles.notFound}>
       <img src={notFound} alt='' />
       <Link to='/'>
         <button>На главную</button>
       </Link>
-    </div>
+    </section>
   )
 }
